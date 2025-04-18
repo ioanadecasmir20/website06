@@ -71,4 +71,13 @@ document.addEventListener('DOMContentLoaded', () => {
   window.hideCourse = function() {
     document.getElementById('course-detail').style.display = 'none';
   };
+
+  // Mobile nav toggle
+  const toggleBtn = document.querySelector('.menu-toggle');
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      const navList = document.querySelector('nav ul');
+      navList.classList.toggle('show');
+    });
+  }
 });
