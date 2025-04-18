@@ -1,0 +1,106 @@
+:root {
+  --primary: #1e3a8a; /* dark blue */
+  --accent: #3b82f6;  /* light blue */
+  --bg: #f9f9f9;
+  --text: #222;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* Hero */
+#hero {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  text-align: center;
+  padding: 100px 20px 80px;
+  margin-top: 80px;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+}
+
+#courses ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background: var(--accent);
+}
+
+/* Footer */
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
