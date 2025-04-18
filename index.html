@@ -38,12 +38,41 @@
   <section id="courses">
     <div class="container">
       <h2>Our Courses</h2>
-      <ul class="course-list">
-        <li><strong>Maths Mastery:</strong> From primary to A-Level, we break it down step-by-step.</li>
-        <li><strong>Science Success:</strong> Biology, Chemistry, Physics — simplified and strengthened.</li>
-        <li><strong>English Elevation:</strong> Improve comprehension, writing, and literary analysis.</li>
-        <li><strong>Exam Prep:</strong> Tailored revision strategies for GCSEs, SATs, and more.</li>
-      </ul>
+      <div class="course-grid">
+
+        <!-- Course Card -->
+        <div class="course-card" onclick="showCourse('maths')">
+          <h3>Maths Mastery</h3>
+          <p>Build strong foundations from KS2 to A-Level.</p>
+        </div>
+
+        <div class="course-card" onclick="showCourse('science')">
+          <h3>Science Success</h3>
+          <p>Biology, Chemistry, Physics — simplified.</p>
+        </div>
+
+        <div class="course-card" onclick="showCourse('english')">
+          <h3>English Elevation</h3>
+          <p>Writing, comprehension, and analysis made easy.</p>
+        </div>
+
+        <div class="course-card" onclick="showCourse('exam')">
+          <h3>Exam Prep</h3>
+          <p>GCSEs, SATs, mocks — tailored revision strategies.</p>
+        </div>
+
+      </div>
+
+      <!-- Product Details Modal -->
+      <div class="course-modal" id="course-detail">
+        <div class="modal-content">
+          <span class="close" onclick="hideCourse()">&times;</span>
+          <h3 id="course-title"></h3>
+          <p id="course-description"></p>
+          <ul id="course-info"></ul>
+          <button class="btn">Book Free Assessment</button>
+        </div>
+      </div>
     </div>
   </section>
 
